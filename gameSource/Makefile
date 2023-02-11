@@ -761,11 +761,11 @@ include ${LAYER_DEPENDS}
 # $<   represents the name.png file
 #
 graphics/%.tga: %.png
-	convert $< -type truecolormatte $@
+	convert -auto-orient $< -type truecolormatte $@
 graphics/%.tga: graphicsSource/%.png
-	convert $< -type truecolormatte $@
+	convert -auto-orient $< -type truecolormatte $@
 music/%.tga: %.png
-	convert $< -type truecolormatte $@
+	convert -auto-orient $< -type truecolormatte $@
 
 
 #
